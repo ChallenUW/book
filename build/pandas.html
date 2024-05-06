@@ -369,11 +369,10 @@ dtype: int64</code></pre>
 <pre class="language-python"><code><span class="token comment"># create a Series from a dictionary</span>
 age_series <span class="token operator">=</span> pd<span class="token punctuation">.</span>Series<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'sarah'</span><span class="token punctuation">:</span> <span class="token number">42</span><span class="token punctuation">,</span> <span class="token string">'amit'</span><span class="token punctuation">:</span> <span class="token number">35</span><span class="token punctuation">,</span> <span class="token string">'zhang'</span><span class="token punctuation">:</span> <span class="token number">13</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>age_series<span class="token punctuation">)</span></code></pre>
-<pre><code>amit     35
-sarah    42
+<pre><code>sarah    42
+amit     35
 zhang    13
 dtype: int64</code></pre>
-<p>Notice that the Series is automatically <strong>sorted</strong> by the keys of the dictionary! This means that the order of the elements in the Series will always be the same for a given dictionary (which cannot be said for the dictionary items themselves).</p>
 <div id="series-operations" class="section level3" number="9.2.1">
 <h3><span class="header-section-number">9.2.1</span> Series Operations</h3>
 <p>The main benefit of Series (as opposed to normal lists or dictionaries) is that they provide a number of operations and methods that make it easy to consider and modify the entire Series, rather than needing to work with each element individually. These functions include built-in <em>mapping</em> and <em>filtering</em> style operations, as well as <em>reducing</em> aggregations.</p>
